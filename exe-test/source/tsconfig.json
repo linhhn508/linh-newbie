@@ -1,0 +1,17 @@
+{
+	"compilerOptions":
+	{
+		"baseUrl": ".",
+
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+
+		"noEmitHelpers": true,
+		"noEmitOnError": true,
+
+		"strictNullChecks": true,
+
+		"module": "commonjs",
+		"target": "es2015"
+	}
+}
