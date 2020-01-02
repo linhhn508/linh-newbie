@@ -1,0 +1,8 @@
+asa:
+    $ref: ../eca-asa-service/delivery.yaml
+bus:
+    $ref: ../eca-bus-service/delivery.yaml
+camp:
+    $ref: ../eca-camp-service/delivery.yaml
+common:
+    $ref: ../eca-common-service/delivery.yaml

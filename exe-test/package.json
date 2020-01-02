@@ -1,0 +1,22 @@
+{
+	"name": "eca-api-gateway",
+	"private": true,
+
+	"scripts": {
+		"postinstall": "node helpers/link",
+		"build": "tsc --project source --outDir dist/source",
+		"watch": "tsc --project source --outDir dist/source --watch"
+	},
+
+	"dependencies": {
+		"eca-framework": "bitbucket:exe-corp/eca-framework#0.1.0",
+		"http-proxy": "1.15",
+		"jsonwebtoken": "7.1"
+	},
+
+	"devDependencies": {
+		"@types/jsonwebtoken": "7.1",
+		"@types/lodash": "4.14",
+		"typescript": "2.1"
+	}
+}
