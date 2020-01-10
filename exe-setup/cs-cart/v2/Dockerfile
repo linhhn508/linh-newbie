@@ -20,3 +20,5 @@ COPY ./setup/ /root/setup
 RUN cp -f /root/setup/nginx1.conf /etc/nginx/nginx.conf \
 && cp -f /root/setup/php1.ini /etc/php.ini \
 && cp -f /root/setup/www1.conf /etc/php-fpm.d/www.conf
+
+CMD && systemctl restart nginx && systemctl restart php-fpm 
