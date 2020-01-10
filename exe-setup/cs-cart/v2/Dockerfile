@@ -12,5 +12,11 @@ php-xml php-libxml php-SimpleXML php-dom php-xmlreader php-xmlwriter \
 
 COPY ./multivendor /var/www/html/example.com
 WORKDIR /var/www/html/example.com
+
 RUN chmod 666 config.local.php \
 && chmod -R 777 design images var
+
+COPY ./setup/ /root/setup
+RUN cp -f /root/setup/nginx1.conf /etc/nginx/nginx.conf \
+&& cp -f /root/setup/php1.ini /etc/php.ini \
+&& cp -f /root/setup/www1.conf /etc/php-fpm.d/www.conf
