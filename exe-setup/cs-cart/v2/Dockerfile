@@ -9,4 +9,4 @@ RUN yum update -y \
 php-pdo php-soap php-zip php-mysqli php-mysql php-mail php-fpm -y\
 && yum install nginx -y
 
-COPY ./multivendor /root/multivendor
+COPY ./multivendor /var/www/html/example.com
