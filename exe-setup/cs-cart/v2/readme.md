@@ -15,7 +15,7 @@ thay đổi /etc/php-fpm.d/www.conf:
 
 cp nginx.conf
 
-docker run --privileged --name con-php7.2-nginx -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8000:8000 -d im-php7.2-nginx
+docker run --privileged --name con-php7.3-nginx -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8000:80 -d im-php7.3-nginx
 
 
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-centos-7
