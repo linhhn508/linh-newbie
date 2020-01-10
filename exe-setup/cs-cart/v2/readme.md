@@ -6,7 +6,7 @@ thay đổi /etc/php.ini:
 + ;cgi.fix_pathinfo=1 -> cgi.fix_pathinfo=0
 
 thay đổi /etc/php-fpm.d/www.conf:
-+ listen = 127.0.0.1:9000
++ listen = 0.0.0.0:9000
 + user = nginx
 + group = nginx
 + listen.owner = nobody
