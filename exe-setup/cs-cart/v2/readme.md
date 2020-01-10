@@ -1,6 +1,6 @@
 FOLOW https://docs.cs-cart.com/latest/install/nginx.html
 
-
+fix not found php-fpm.sock: https://stackoverflow.com/questions/40059745/nginx-connect-to-unix-var-run-php7-0-fpm-sock-failed-2-no-such-file-or-dir
 
 thay đổi /etc/php.ini:
 + ;cgi.fix_pathinfo=1 -> cgi.fix_pathinfo=0
