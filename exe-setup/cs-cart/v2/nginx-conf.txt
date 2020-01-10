@@ -88,7 +88,7 @@ server {
     location @backend {
         try_files $uri $uri/ /$2$3 /$3 /index.php  =404;
         #   The path to the PHP-FPM daemon socket
-        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_pass 0.0.0.0:9000;
         #
         fastcgi_index index.php;
         fastcgi_read_timeout 360;
@@ -301,7 +301,7 @@ server {
         fastcgi_read_timeout 61;
         try_files $uri $uri/ =404;
         #   The path to the PHP-FPM daemon socket
-        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_pass 0.0.0.0:9000;
         fastcgi_index index.php;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
