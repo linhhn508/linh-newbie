@@ -19,7 +19,7 @@ systemctl restart php-fpm
 
 cp nginx.conf
 
-docker run --privileged --name con-php7.3-nginx -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8000:80 -d im-php7.3-nginx
+docker run -it --privileged --name con-php7.3-nginx -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8000:80 -d im-php7.3-nginx /usr/sbin/init
 
 
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-centos-7
