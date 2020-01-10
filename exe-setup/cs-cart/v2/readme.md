@@ -11,6 +11,8 @@ thay đổi /etc/php-fpm.d/www.conf:
 + group = nginx
 + listen.owner = nobody
 + listen.group = nobody
+
+
 systemctl restart php-fpm
 
 cp nginx.conf
